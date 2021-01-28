@@ -16,6 +16,13 @@
     width: 150px;
     height: 100px;
     background-color: indianred;
+    text-align: center;
+    font-size: 4.5ch;
+}
+
+h1{
+    margin-top: 0.125em;
+    margin-bottom: 0.25em;
 }
 
 .div-row{
