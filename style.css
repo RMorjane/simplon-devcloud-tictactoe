@@ -1,9 +1,23 @@
-* body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2f 1.5fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+}
 nav{
     background-color: #AD5D5D;
     height: 10vh;
+    text-align: center;
+    border: red 1px solid;
+}
+main{
+    border: 1px red solid;
 }
