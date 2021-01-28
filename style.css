@@ -1,25 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #212121;
+}
+#container{
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
 .div-main{
     width: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
-    margin-bottom: auto;
+    margin: 0 auto;
+    margin-top: 5em;
+    padding: 2em;
+    background-color: #666666;
+    border-radius: 2%;
+}
+
+.title{
+    text-align: center;
+    padding: 1em;
+    color: #FFF;
 }
 
 .div-cases{
     cursor: pointer;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    width: 150px;
-    height: 100px;
-    background-color: indianred;
+    margin: 0.6em;
+    width: 14em;
+    height: 11em;
+    background-color: #333333;
+    border-radius: 1em;
+    opacity: 1;
 }
 
 .div-row{
     width: fit-content;
     height: fit-content;
     display: flex;
+
 }
+
+.player1, .player2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player1 p{
+    width:200px;
+    padding: 1em;
+    background: linear-gradient(
+45deg
+, rgba(92, 255, 244, 0.92), transparent);
+    position: relative;
+    top: 30em;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #313133;
+    height: 3em;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 8em;
+    font-weight: bold;
+    transition: all .5s;
+    
+    
+    
+}
+
+.player1 p:hover{
+    color: green;
+    box-shadow: rgba(red, green, blue, alpha);
+        
+      
+}
+
+
+.player2 p{
+    width:200px;
+    padding: 1em;
+    background: linear-gradient(
+        45deg
+        , rgba(92, 255, 244, 0.92), transparent);
+    position: relative;
+    top: 30em;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    height: 3em;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 8em;
+    transition: all .5s;
+}
+
