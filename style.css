@@ -16,8 +16,10 @@ nav{
     background-color: #AD5D5D;
     height: 10vh;
     text-align: center;
-    border: red 1px solid;
 }
 main{
     border: 1px red solid;
+}
+main h2{
+    text-align: center;
 }
