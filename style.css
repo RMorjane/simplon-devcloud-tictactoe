@@ -3,3 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav{
+    background-color: #AD5D5D;
+    height: 10vh;
+}
