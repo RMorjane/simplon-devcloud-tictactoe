@@ -1,0 +1,25 @@
+.div-main{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: auto;
+}
+
+.div-cases{
+    cursor: pointer;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 150px;
+    height: 100px;
+    background-color: indianred;
+}
+
+.div-row{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
