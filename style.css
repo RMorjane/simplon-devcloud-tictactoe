@@ -11,6 +11,10 @@ nav{
 nav h1{
     padding-top: 5vh;
 }
+section h2{
+    text-align: center;
+    padding-top: 5vh;
+}
 
 .div-main{
     width: fit-content;
