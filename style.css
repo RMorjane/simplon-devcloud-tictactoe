@@ -69,18 +69,21 @@ section h2{
     opacity: 1;
 }
 
+.case{
+    margin-left: 60px;
+    margin-top: 2px;
+    font-size: 16ch;
+}
+
 h1{
     margin-top: 0.125em;
     margin-bottom: 0.25em;
-
 }
 
 .div-row{
     width: fit-content;
     height: fit-content;
     display: flex;
-
-
 }
 
 .player1, .player2{
@@ -117,9 +120,7 @@ h1{
 .player2 p{
     width:200px;
     padding: 1em;
-    background: linear-gradient(
-        45deg
-        , rgba(92, 255, 244, 0.92), transparent);
+    background: linear-gradient(45deg, rgba(92, 255, 244, 0.92), transparent);
     position: relative;
     top: 30em;
     text-transform: uppercase;
