@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #212121;
 }
@@ -11,6 +12,33 @@ body{
     width: auto;
     display: flex;
     font-family: 'Roboto', sans-serif;
+}
+.container1 {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2f 1.5fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+}
+nav{
+    background-color: #AD5D5D;
+    height: 10vh;
+    text-align: center;
+}
+
+main h2{
+    text-align: center;
+}
+/* test*/
+nav h1{
+    padding-top: 5vh;
+}
+section h2{
+    text-align: center;
+    padding-top: 5vh;
+
 }
 
 .div-main{
@@ -41,10 +69,17 @@ body{
     opacity: 1;
 }
 
+h1{
+    margin-top: 0.125em;
+    margin-bottom: 0.25em;
+
+}
+
 .div-row{
     width: fit-content;
     height: fit-content;
     display: flex;
+
 
 }
 
