@@ -8,3 +8,5 @@ ids.forEach(function(item){
         div_case.innerHTML = "<h1>O</h1>"
     })
 })
+
+
