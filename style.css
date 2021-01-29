@@ -199,27 +199,31 @@ input:focus{
 }
 
 .x, .img_circ{
-    margin-left: 3em;
+    margin-left: 1em;
 }
 
 .img_circ img{
     margin-top: 1em;
-    width: 5em;
+    width: 6em;
     position: absolute;
-    top: 11em;
-    margin-left: 0.5em;
+    top: 20em;
+    margin-left: -0.5em;
 }
 
 .x img{
     margin-top: 1em;
     width: 4em;
     position: absolute;
-    top: 15em;
-    margin-left: 1em;
+    top: 21em;
+    
 }
 
-.inp1, .inp2{
-    margin-left: 3em;
+.inp2{
+    margin-left: 7em;
+}
+
+.inp1{
+    margin-left: 8em;
 }
 
 .playgame a{
@@ -254,4 +258,10 @@ input:focus{
 .name1, .name2{
     margin-right: 2em;
 
+}
+
+.marq{
+    margin-right: 19em;
+    font-size: 17px;
+    text-transform: uppercase;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Tic Tac Toe</title>
 </head>
+
 <body>
     <header class="head">
     </header>
@@ -17,33 +19,38 @@
             <h2 class="title_h2">Multiplayer Game</h2>
         </div>
         <div class="bloc_input">
-            <div class="player-box">
-                <label class="name1">Enter Name Player 1</label>
-                <input type="text" name="circ" required="">
-                <input type="radio" id="circle" name="circle" value="circle" class="inp1" checked="checked">
-                <label for="circle">
-                </label>
-                <span class="img_circ">
-                    <img src="img/circle.png" alt="circle">
-                </span>
-            </div>
-            <div class="player-box1">
-                <label class="name2">Enter Name Player 2</label>
-                <input type="text" name="cros" required="">
-                <input type="radio" id="cross" name="circle" value="cross" class="inp2">
-                <label for="cross">
-                </label>
-                <span class="x">
-                    <img src="img/icon_x.png" alt="croix">
-                </span>
-            </div>
+            <form action="app.html" method="POST">
+                <div class="player-box">
+                    <label class="name1">Enter Name Player 1</label>
+                    <input type="text" name="circ" required="" id="user1">
+                </div>
+                <div class="player-box1">
+                    <label class="name2">Enter Name Player 2</label>
+                    <input type="text" name="cros" required="" id="user2">
+                </div>
         </div>
+        <div class="marq">
+            Marqueur Joueur 1:
+        </div>
+        <input type="radio" id="circle" name="circle" value="circle" class="inp1" checked="checked">
+        <label for="circle">
+        </label>
+        <span class="img_circ">
+            <img src="img/circle.png" alt="circle">
+        </span>
+        <input type="radio" id="cross" name="circle" value="cross" class="inp2">
+        <label for="cross">
+        </label>
+        <span class="x">
+            <img src="img/icon_x.png" alt="croix">
+        </span>
         <div class="playgame">
-            <button>
+            <button id="btn_play">
                 <a href="app.html"> PLAY GAME
                 </a>
             </button>
         </div>
+        </form>
     </div>
     </div>
     <footer>
