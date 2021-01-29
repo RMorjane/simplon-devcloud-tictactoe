@@ -78,10 +78,12 @@ body{
     
 }
 
-.player1 p:hover{
-    color: green;
-    box-shadow: rgba(red, green, blue, alpha);
-        
+.player1 p:hover, .player2 p:hover{
+    color: #FFF;
+    background: linear-gradient(
+        45deg
+        , rgba(58, 154, 154, 0.92), transparent);
+       
       
 }
 
