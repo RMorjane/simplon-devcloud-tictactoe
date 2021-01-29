@@ -146,3 +146,66 @@ h1{
 }
 
 /**********************page index.html*********/
+
+#container_index{
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+.bloc_title{
+    margin-top: 3em;
+}
+
+.player-box{
+    margin: 0 auto;
+    color: #FFF;
+    margin-bottom: 2em;
+
+}
+
+.bloc_input{
+    margin: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.bloc_input input{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    width: auto;
+    border:none;
+    border-bottom:1px solid #757575
+}
+.bloc_input label{
+    pointer-events:none;
+    text-transform: uppercase;
+}
+
+input:focus{
+     outline:none; 
+}
+
+.player-box img{
+    
+}
+
+.img_circ img{
+    margin-top: 1em;
+    width: 5em;
+    position: absolute;
+    top: 8em;
+    margin-left: 0.5em;
+}
+
+.x img{
+    margin-top: 1em;
+    width: 4em;
+    position: absolute;
+    top: 13em;
+    margin-left: 1em;
+}
