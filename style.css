@@ -1,3 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #CD5C5C;
+    height: 10vh;
+    text-align: center;
+}
+nav h1{
+    padding-top: 5vh;
+}
+section h2{
+    text-align: center;
+    padding-top: 5vh;
+}
+
 .div-main{
     width: fit-content;
     height: fit-content;
