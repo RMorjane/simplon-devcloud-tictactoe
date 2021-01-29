@@ -169,8 +169,8 @@ h1{
 .bloc_input{
     margin: 3em;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    padding-right: 3em;
     
 }
 
@@ -190,8 +190,8 @@ input:focus{
      outline:none; 
 }
 
-.player-box img{
-    
+.x, .img_circ{
+    margin-left: 3em;
 }
 
 .img_circ img{
@@ -208,4 +208,41 @@ input:focus{
     position: absolute;
     top: 13em;
     margin-left: 1em;
+}
+
+.inp1, .inp2{
+    margin-left: 3em;
+}
+
+.playgame a{
+    text-decoration: none;
+    color: #313133;
+    font-size: larger;
+}
+
+.playgame button{
+    width:200px;
+    padding: 1em;
+    background: linear-gradient(
+        45deg
+        , rgba(92, 255, 244, 0.92), transparent);
+    position: relative;
+    top: 5em;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    height: 3em;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 8em;
+    transition: all .5s;
+    margin-left: 3em;
+}
+
+.name1, .name2{
+    margin-right: 2em;
 }
