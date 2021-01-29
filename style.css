@@ -13,27 +13,16 @@ body{
     display: flex;
     font-family: 'Roboto', sans-serif;
 }
-.container1 {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.2f 1.5fr;
-    grid-template-areas: 
-    "nav nav nav"
-    "main main main"
-}
-nav{
+header{
+    position: absolute;
     background-color: #AD5D5D;
     height: 10vh;
+    width: 100%;
     text-align: center;
+    color:white;
 }
-
-main h2{
-    text-align: center;
-}
-/* test*/
-nav h1{
-    padding-top: 5vh;
+header h1{
+    padding-top: 2vh;
 }
 section h2{
     text-align: center;
@@ -47,7 +36,7 @@ section h2{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: 10em;
     padding: 2em;
     background-color: #666666;
     border-radius: 2%;
