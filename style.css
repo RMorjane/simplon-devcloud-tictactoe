@@ -59,7 +59,7 @@ section h2{
     color: #FFF;
 }
 
-.div-cases{
+.div-case{
     cursor: pointer;
     margin: 0.6em;
     width: 14em;
@@ -91,9 +91,7 @@ h1{
 .player1 p{
     width:200px;
     padding: 1em;
-    background: linear-gradient(
-45deg
-, rgba(92, 255, 244, 0.92), transparent);
+    background: linear-gradient(45deg, rgba(92, 255, 244, 0.92), transparent);
     position: relative;
     top: 30em;
     text-transform: uppercase;
@@ -107,19 +105,12 @@ h1{
     z-index: 0;
     border-radius: 8em;
     font-weight: bold;
-    transition: all .5s;
-    
-    
-    
+    transition: all .5s;    
 }
 
 .player1 p:hover, .player2 p:hover{
     color: #FFF;
-    background: linear-gradient(
-        45deg
-        , rgba(58, 154, 154, 0.92), transparent);
-       
-      
+    background: linear-gradient(45deg, rgba(58, 154, 154, 0.92), transparent);      
 }
 
 
