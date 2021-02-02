@@ -36,7 +36,7 @@ section h2{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 10em;
+    margin-top: 1em;
     padding: 2em;
     background-color: #666666;
     border-radius: 2%;
@@ -44,24 +44,24 @@ section h2{
 
 .title{
     text-align: center;
-    padding: 1em;
+    padding: 0.5em;
     color: #FFF;
 }
 
 .div-case{
     cursor: pointer;
     margin: 0.6em;
-    width: 14em;
-    height: 11em;
+    width: 10em;
+    height: 8em;
     background-color: lightsteelblue;
     border-radius: 1em;
     opacity: 1;
 }
 
 .case{
-    margin-left: 60px;
+    margin-left: 45px;
     margin-top: 2px;
-    font-size: 16ch;
+    font-size: 12ch;
 }
 
 h1{
@@ -75,17 +75,17 @@ h1{
     display: flex;
 }
 
-.player1, .player2{
+.goback, .replay{
     margin-left: auto;
     margin-right: auto;
 }
 
-.player1 p{
+.goback p{
     width:200px;
     padding: 1em;
     background: linear-gradient(45deg, rgba(92, 255, 244, 0.92), transparent);
     position: relative;
-    top: 30em;
+    top: 20em;
     text-transform: uppercase;
     letter-spacing: 1.3px;
     color: #313133;
@@ -100,18 +100,18 @@ h1{
     transition: all .5s;    
 }
 
-.player1 p:hover, .player2 p:hover{
+.goback p:hover, .replay p:hover{
     color: #FFF;
     background: linear-gradient(45deg, rgba(58, 154, 154, 0.92), transparent);      
 }
 
 
-.player2 p{
+.replay p{
     width:200px;
     padding: 1em;
     background: linear-gradient(45deg, rgba(92, 255, 244, 0.92), transparent);
     position: relative;
-    top: 30em;
+    top: 20em;
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;

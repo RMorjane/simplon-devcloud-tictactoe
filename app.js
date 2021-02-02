@@ -1,44 +1,51 @@
-// gestion input page index.html
+let player1 = $_GET("player1")
+console.log(player1)
 
-let btn_play = document.getElementById("btn_play");
-let user1 = document.getElementById("user1");
-let user2 = document.getElementById("user2");
-let mark_user1 = document.getElementById("circle");
-let mark_user2 = document.getElementById("cross");
+let player2 = $_GET("player2")
+console.log(player2)
 
-// idem pour les marqueurs rond et croix
-// si le radio bouton rond est sélectionné par le user1 : mark_user1 = 'O' et par conséquent mark_user2 = 'X'
-if (mark_user1.checked){
-    console.log("vous avez selectionné le Rond pour le user 1" );
-}else if(mark_user2.checked) {
-    console.log("Vous avez choisi la Croix pour le user 2");
-}
-btn_play.addEventListener("click",e=>{
-    alert("user1 : " + user1.value + "\n" + "user2 : " + user2.value)
-})
+let circle = $_GET("circle")
+console.log(circle)
 
-mark_user1.addEventListener("change", e=> {
-    console.log("vous avez selectionné le Rond pour le user 1");
-})
-
-mark_user2.addEventListener("change", e=>{
-    console.log("Vous avez choisi la Croix pour le user 1");
-})
+let cross = $_GET("cross")
+console.log(cross)
 
 let selected = 0
 
-let playersList = [
-    {
-        name: "morjane",
-        text: "O",
-        color: "red"
-    },
-    {
-        name: "biben",
-        text: "X",
-        color: "black"
-    }
-]
+let playersList = []
+
+if(circle=="true"){
+
+    console.log("circle selected")
+    playersList = [
+        {
+            name: player1,
+            text: "O",
+            color: "red"
+        },
+        {
+            name: player2,
+            text: "X",
+            color: "black"
+        }
+    ]
+}
+else if(cross=="true"){
+
+    console.log("cross selected")
+    playersList = [
+        {
+            name: player1,
+            text: "X",
+            color: "black"
+        },
+        {
+            name: player2,
+            text: "O",
+            color: "red"
+        }
+    ]
+}
 
 let title = document.getElementById("title_id")
 
@@ -58,16 +65,17 @@ let controls = {
 
 let cases = {}
 
-let p1 = document.querySelector('#p1')
-let p2 = document.querySelector('#p2')
+let btn_goback = document.getElementById('btn_goback')
+btn_goback.addEventListener("click",e=>{
+    document.location.href = "index.html"
+})
+
+let btn_replay = document.getElementById('btn_replay')
+btn_replay.addEventListener("click",e=>{
+    replay()
+})
 
 let player = playersList[selected]
-
-p1.innerHTML = `<b>${playersList[0]["name"].toUpperCase()}</b>`
-p1.style.color = playersList[0]["color"]
-
-p2.innerHTML = `<b>${playersList[1]["name"].toUpperCase()}</b>`
-p2.style.color = playersList[1]["color"]
 
 alphaList.forEach(function(alpha){
     for(i=1;i<=3;i++){
@@ -106,10 +114,6 @@ function test_case(id){
         }
         if(win){
             title.innerHTML = `the  winner  is  <font color=red>${player["name"]}</font>`.toUpperCase()
-            //title.style.color = player["color"]
-            // if(confirm("Voulez - vous jouer une nouvelle partie ?")){
-            //     replay()
-            // }
         }
     }else{
         console.log("id inexistant")
@@ -119,6 +123,7 @@ function test_case(id){
 function replay(){
     title.innerHTML = "are you ready".toUpperCase()
     title.style.color = "#FFF"
+    cases = {}
     alphaList.forEach(function(alpha){
         for(i=1;i<=3;i++){
             let div_case = document.getElementById(`${alpha}${i}`)
