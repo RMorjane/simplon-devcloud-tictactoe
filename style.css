@@ -13,14 +13,7 @@ body{
     display: flex;
     font-family: 'Roboto', sans-serif;
 }
-header{
-    position: absolute;
-    background-color: #AD5D5D;
-    height: 10vh;
-    width: 100%;
-    text-align: center;
-    color:white;
-}
+
 header h1{
     padding-top: 2vh;
 }
