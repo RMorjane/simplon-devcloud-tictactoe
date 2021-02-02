@@ -18,42 +18,40 @@
             <h2 class="title_h2">Multiplayer Game</h2>
         </div>
         <div class="bloc_input">
-            <form action="app.html" method="POST">
-                <div class="player-box">
-                    <label class="name1">Enter Name Player 1</label>
-                    <input type="text" name="circ" required="" id="user1">
-                </div>
-                <div class="player-box1">
-                    <label class="name2">Enter Name Player 2</label>
-                    <input type="text" name="cros" required="" id="user2">
-                </div>
+            <div class="player-box">
+                <label class="name1">Enter Name Player 1</label>
+                <input type="text" name="player1" required="" id="player1">
+            </div>
+            <div class="player-box1">
+                <label class="name2">Enter Name Player 2</label>
+                <input type="text" name="player2" required="" id="player2">
+            </div>
+            </div>
+            <div class="marq">
+                    Marqueur Joueur 1:
+            </div>
+            <input type="radio" id="circle" name="circle" value="circle" class="inp1" checked="checked">
+            <label for="circle">
+            </label>
+            <span class="img_circ">
+                <img src="img/circle.png" alt="circle">
+            </span>
+            <input type="radio" id="cross" name="circle" value="cross" class="inp2">
+            <label for="cross">
+            </label>
+            <span class="x">
+                <img src="img/icon_x.png" alt="croix">
+            </span>
+            <div class="playgame">
+                <button id="btn_play">
+                    PLAY GAME
+                </button>
+            </div>
         </div>
-        <div class="marq">
-            Marqueur Joueur 1:
-        </div>
-        <input type="radio" id="circle" name="circle" value="circle" class="inp1" checked="checked">
-        <label for="circle">
-        </label>
-        <span class="img_circ">
-            <img src="img/circle.png" alt="circle">
-        </span>
-        <input type="radio" id="cross" name="circle" value="cross" class="inp2">
-        <label for="cross">
-        </label>
-        <span class="x">
-            <img src="img/icon_x.png" alt="croix">
-        </span>
-        <div class="playgame">
-            <button id="btn_play">
-                <a href="app.html"> PLAY GAME
-                </a>
-            </button>
-        </div>
-        </form>
-    </div>
     </div>
     <footer>
 
-    </footer>   
+    </footer>
+    <script src="./index.js"></script>  
 </body>
 </html>
