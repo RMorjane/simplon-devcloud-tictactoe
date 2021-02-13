@@ -75,6 +75,14 @@ btn_replay.addEventListener("click",e=>{
     replay()
 })
 
+let message = document.getElementById("message")
+let popup = document.getElementById("popup")
+let btn_popup_replay = document.querySelector("button")
+btn_popup_replay.addEventListener("click",e=>{
+    popup.style.display = "none"
+    replay()
+})
+
 let player = playersList[selected]
 
 alphaList.forEach(function(alpha){
@@ -112,8 +120,16 @@ function test_case(id){
             win |= triple
             if(triple) break
         }
+        let turns_count = Object.keys(cases).length
         if(win){
-            title.innerHTML = `the  winner  is  <font color=red>${player["name"]}</font>`.toUpperCase()
+            console.log(`The winner is ${player["name"]}`)
+            message.innerHTML = `The winner is <br>${player["name"]}`.toUpperCase()
+            popup.style.display = "block"
+        }
+        else if(turns_count==9){
+            console.log(`Game over`)
+            message.innerHTML = `Game over`.toUpperCase()
+            popup.style.display = "block"            
         }
     }else{
         console.log("id inexistant")
